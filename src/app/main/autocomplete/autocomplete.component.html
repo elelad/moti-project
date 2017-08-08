@@ -1,0 +1,25 @@
+<div class="listBox">
+  <h2>Search Cars</h2>
+  <input [(ngModel)]="searchQuery" #ctrl="ngModel" (ngModelChange)="searchCar()" (focus)="toggleList()" (focusout)="toggleList()"
+  />
+  <div *ngIf="showList" class="autoListBox">
+    <button class="itemBtn" *ngFor="let item of autoList" (click)="setSelectedCar(item)">{{item.manufacturer}}
+    </button>
+  </div>
+</div>
+<br><br>
+<div *ngIf="selectedCar" class="listBox">
+  <h4>{{selectedCar.manufacturer}}</h4>
+  <p class="left">
+    <span>
+      Model: {{selectedCar.model}}
+    </span><br>
+    <span>
+      Price: {{selectedCar.price}}
+    </span><br>
+    <span class="center">
+      <a href="{{selectedCar.wiki}}" target="blank">Link</a>
+    </span>
+  </p>
+
+</div>

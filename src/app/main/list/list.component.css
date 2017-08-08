@@ -1,0 +1,23 @@
+app-list{
+    
+}
+
+.listBox{
+    min-width: 150px;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px rgb(150,150,150);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    margin: 5px;
+    padding: 5px;
+    border: solid rgb(200,200,200) 1px;
+    
+}

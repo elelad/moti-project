@@ -1,3 +1,7 @@
+import { GetDataService } from './service/get-data.service';
+import { ServiceModule } from './service/service.module';
+import { MainModule } from './main/main.module';
+import { SharedModule } from './main/shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,9 +16,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MainModule,
   ],
-  providers: [],
+  providers: [GetDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
