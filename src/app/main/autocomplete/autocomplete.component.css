@@ -1,0 +1,49 @@
+app-autocomplete{
+
+}
+
+input{
+    border: solid 1px rgb(150,150,150);
+}
+
+.listBox{
+    min-width: 150px;
+    min-height: 150px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.carDetailsBox{
+    min-width: 150px;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px rgb(150,150,150);
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+
+}
+
+
+.autoListBox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgb(150,150,150);
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+
+}
+
+.itemBtn{
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+}
+
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
